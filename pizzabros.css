@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar topo */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0b0b;
+    padding: 10px 30px;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.logo span {
+    margin-left: 8px;
+    font-size: 29px;
+    letter-spacing: 1px;
+    color: #fff5e6;
+    text-align: center;
+}
+
+.menu-topo ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-topo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-topo a:hover {
+    color: #ffcc00;
+}
+
+/* Banner */
+#banner {
+    background: linear-gradient(90deg, #d32f2f, #ffcc00);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+}
+
+#banner h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    margin-bottom: 15px;
+}
+
+#banner p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+}
+
+/* Sabores e cardápio */
+#sabores {
+    padding: 40px 20px;
+    background-color: #fff5e6;
+    text-align: center;
+}
+
+.cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pizza {
+    background-color: #ffe0b3;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.pizza:hover {
+    transform: scale(1.05);
+}
+
+.pizza h3 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.pizza p {
+    font-size: 16px;
+    color: #333;
+}
+
+.pizza img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .cardapio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza {
+        width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.botao {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #d32f2f;
+    border: 2px solid #ffcc00;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #ffcc00;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+}
