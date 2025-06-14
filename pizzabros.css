@@ -168,3 +168,48 @@ footer p {
     color: white;
     box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
 }
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Menu mobile escondido*/
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #0b0b0b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.menu-mobile a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.menu-mobile a:hover {
+    background-color: #222;
+}
+.menu-mobile {
+    display: none;
+}
+.menu-mobile.show {
+    display: flex;
+}
+@media (max-width: 768px) {
+  .menu-topo {
+    display: none;
+  }
+
+  .hamburguer {
+    display: flex;
+  }
+}
